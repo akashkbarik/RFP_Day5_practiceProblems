@@ -62,12 +62,24 @@ public class Core_Programs {
         System.out.println("enter a number : ");
         int N2 = sc.nextInt();
         for (int i = 2; i * i <= N2; i++) {
-            if (N2 % i == 0){
-                N2/=i;
-                System.out.println("prime factors of N is : \n"+i);
+            if (N2 % i == 0) {
+                N2 /= i;
+                System.out.println("prime factors of N is : \n" + i);
             }
-            if(N2>1)
-                System.out.println(N2);
+            if (N2 > 1)
+                System.out.println(N2 + "\n................................");
         }
+//      Quotient Reminder code
+        System.out.println("this is Quotient Reminder code\n............................ ");
+        System.out.println("enter a Dividend");
+        int Dividend = sc.nextInt();
+        System.out.println("enter a Divisor");
+        int Divisor = sc.nextInt();
+        float quo = Dividend / Divisor;
+        float rem = Dividend % Divisor;
+        System.out.println("quotient is : " + quo);
+        System.out.println("reminder is : " + rem+"\n............................................");
+//
+
     }
 }
