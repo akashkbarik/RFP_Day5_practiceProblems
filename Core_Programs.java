@@ -122,16 +122,34 @@ public class Core_Programs {
             System.out.println(n1 + " is greatest of all");
         } else if (n2 > n1 && n2 > n3) {
             System.out.println(n2 + " is greatest of all");
-        }else System.out.println(n3+ " is greatest of all");
+        } else System.out.println(n3 + " is greatest of all");
         System.out.println("................................................");
 
 //        Distance
+        System.out.println("this is distance code\n.....................................");
         System.out.println("enter the value of x : ");
-        int point_x= sc.nextInt();
+        int point_x = sc.nextInt();
         System.out.println("enter the value of y : ");
-        int point_y= sc.nextInt();
-        int distance=(int) Math.sqrt((Math.pow(point_x,2)+Math.pow(point_y,2)));
-        System.out.println("the Euclidean distance is : "+distance+"\n........................................");
+        int point_y = sc.nextInt();
+        int distance = (int) Math.sqrt((Math.pow(point_x, 2) + Math.pow(point_y, 2)));
+        System.out.println("the Euclidean distance is : " + distance + "\n........................................");
+
+//        Quadratic equation
+        System.out.println("this is Quadratic equation \n......................................");
+        System.out.println("Enter the value of a :");
+        int a = sc.nextInt();
+        System.out.println("Enter the value of b :");
+        int b = sc.nextInt();
+        System.out.println("Enter the value of c :");
+        int c = sc.nextInt();
+
+        double delta = b * b - 4 * a * c;
+        System.out.println(delta);
+        double root1 = (-b + Math.sqrt(delta)) / (2 * a);
+        System.out.println("Value of Root 1 of x :" + root1);
+        double root2 = (-b - Math.sqrt(delta)) / (2 * a);
+        System.out.println("Value of Root 2 of x :" + root2);
+        System.out.println(".....................................................");
 
     }
 }
