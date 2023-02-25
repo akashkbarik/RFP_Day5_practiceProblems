@@ -93,5 +93,12 @@ public class Core_Programs {
         System.out.println("after swapping value of 1st number : " + num1);
         System.out.println("after swapping value of 2nd number : " + num2 + "\n............................");
 
+//        Even odd
+        System.out.println("this is Even odd code \n..................................");
+        System.out.println("enter the number");
+        int n = sc.nextInt();
+        if(n%2==0) System.out.println("even number");
+        else System.out.println("odd number");
+        System.out.println(".......................................");
     }
 }
