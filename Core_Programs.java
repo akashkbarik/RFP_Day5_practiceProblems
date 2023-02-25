@@ -100,5 +100,17 @@ public class Core_Programs {
         if(n%2==0) System.out.println("even number");
         else System.out.println("odd number");
         System.out.println(".......................................");
+
+//        Vowel_constant
+        System.out.println("this is Vowel constant code \n...................................");
+        System.out.println("enter a character : ");
+        char Ch = sc.next().charAt(0);
+        if (Ch == 'a' || Ch == 'e' || Ch == 'i' || Ch == 'o' || Ch == 'u' || Ch == 'A' || Ch == 'E' || Ch == 'I' || Ch == 'O' || Ch == 'U') {
+            System.out.println("Given alphabet is a vowel");
+        } else {
+            System.out.println("Given alphabet is a consonant");
+        }
+        System.out.println("........................................");
+
     }
 }
