@@ -41,8 +41,22 @@ public class Core_Programs {
             System.out.println("please enter no between 0 and 31");
         } else {
             for (int i = 0; i <= N; i++) {
-                System.out.println(i+" power of 2 is : "+Math.pow(2,i));
+                System.out.println(i + " power of 2 is : " + Math.pow(2, i) + "\n..................................");
             }
         }
+//      harmonic number code
+        System.out.println("this is harmonic program code\n............................");
+        System.out.println("enter the value of N : ");
+        int N1 = sc.nextInt();
+        float Harmonic_num = 0;
+        if (N1 <= 0)
+            System.out.println("N value cannot be 0.");
+        else {
+            for (float i = 1; i <= N1; i++) {
+                Harmonic_num += (1 / i);
+            }
+            System.out.println("Nth harmonic value of (1/"+N1+") is : " + Harmonic_num+"\n.........................................");
+        }
+//
     }
 }
