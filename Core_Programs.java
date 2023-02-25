@@ -55,8 +55,19 @@ public class Core_Programs {
             for (float i = 1; i <= N1; i++) {
                 Harmonic_num += (1 / i);
             }
-            System.out.println("Nth harmonic value of (1/"+N1+") is : " + Harmonic_num+"\n.........................................");
+            System.out.println("Nth harmonic value of (1/" + N1 + ") is : " + Harmonic_num + "\n.........................................");
         }
-//
+//      Factors code
+        System.out.println("this is Factors code\n..............................");
+        System.out.println("enter a number : ");
+        int N2 = sc.nextInt();
+        for (int i = 2; i * i <= N2; i++) {
+            if (N2 % i == 0){
+                N2/=i;
+                System.out.println("prime factors of N is : \n"+i);
+            }
+            if(N2>1)
+                System.out.println(N2);
+        }
     }
 }
