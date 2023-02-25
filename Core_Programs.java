@@ -78,8 +78,20 @@ public class Core_Programs {
         float quo = Dividend / Divisor;
         float rem = Dividend % Divisor;
         System.out.println("quotient is : " + quo);
-        System.out.println("reminder is : " + rem+"\n............................................");
-//
+        System.out.println("reminder is : " + rem + "\n............................................");
+
+//      Swap numbers
+        System.out.println("this is Swap two numbers code \n.................................");
+        System.out.println("enter 1st number");
+        int num1 = sc.nextInt();
+        System.out.println("enter 2nd number");
+        int num2 = sc.nextInt();
+        int temp;
+        temp = num1;
+        num1 = num2;
+        num2 = temp;
+        System.out.println("after swapping value of 1st number : " + num1);
+        System.out.println("after swapping value of 2nd number : " + num2 + "\n............................");
 
     }
 }
