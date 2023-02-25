@@ -27,9 +27,22 @@ public class Core_Programs {
         System.out.println("This is Leap year code\n................................");
         System.out.println("enter year you want to check : ");
         int year = sc.nextInt();
-        if ((year % 4 == 0 ))
-            System.out.println(year+" is a leap year");
-        else System.out.println(year+" is not a leap year");
+        if ((year % 4 == 0))
+            System.out.println(year + " is a leap year");
+        else System.out.println(year + " is not a leap year");
         System.out.println("....................................");
+
+//        Power_of_two code
+        System.out.println("This is power of 2 code\n................................");
+        System.out.println("enter the power of two : ");
+        int N = sc.nextInt();
+
+        if (N < 0 || N > 31) {
+            System.out.println("please enter no between 0 and 31");
+        } else {
+            for (int i = 0; i <= N; i++) {
+                System.out.println(i+" power of 2 is : "+Math.pow(2,i));
+            }
+        }
     }
 }
