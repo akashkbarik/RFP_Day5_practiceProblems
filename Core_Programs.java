@@ -124,5 +124,14 @@ public class Core_Programs {
             System.out.println(n2 + " is greatest of all");
         }else System.out.println(n3+ " is greatest of all");
         System.out.println("................................................");
+
+//        Distance
+        System.out.println("enter the value of x : ");
+        int point_x= sc.nextInt();
+        System.out.println("enter the value of y : ");
+        int point_y= sc.nextInt();
+        int distance=(int) Math.sqrt((Math.pow(point_x,2)+Math.pow(point_y,2)));
+        System.out.println("the Euclidean distance is : "+distance+"\n........................................");
+
     }
 }
