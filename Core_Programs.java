@@ -97,7 +97,7 @@ public class Core_Programs {
         System.out.println("this is Even odd code \n..................................");
         System.out.println("enter the number");
         int n = sc.nextInt();
-        if(n%2==0) System.out.println("even number");
+        if (n % 2 == 0) System.out.println("even number");
         else System.out.println("odd number");
         System.out.println(".......................................");
 
@@ -112,5 +112,17 @@ public class Core_Programs {
         }
         System.out.println("........................................");
 
+//        Largest number
+        System.out.println("this is largest number code \n......................................");
+        System.out.println("enter 1st 2nd and 3rd number respectively : ");
+        int n1 = sc.nextInt();
+        int n2 = sc.nextInt();
+        int n3 = sc.nextInt();
+        if (n1 > n2 && n2 > n3) {
+            System.out.println(n1 + " is greatest of all");
+        } else if (n2 > n1 && n2 > n3) {
+            System.out.println(n2 + " is greatest of all");
+        }else System.out.println(n3+ " is greatest of all");
+        System.out.println("................................................");
     }
 }
