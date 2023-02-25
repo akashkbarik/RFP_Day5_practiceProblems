@@ -2,12 +2,12 @@ package Day5.Practice;
 
 import java.util.Scanner;
 
-public class Flip_coin {
+public class Core_Programs {
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
 
-        //Flip coin function
+        //Flip coin code
         System.out.println("enter no of times the random number will execute : ");
         int number = sc.nextInt();
         float head_count = 0;
@@ -21,7 +21,15 @@ public class Flip_coin {
         float headCountPercentage = (head_count * 100) / number;
         float tailCountPercentage = (tail_count * 100) / number;
 
-        System.out.println("percentage of head is : " + headCountPercentage + "+\npercentage of tail is : " + tailCountPercentage);
+        System.out.println("percentage of head is : " + headCountPercentage + "+\npercentage of tail is : " + tailCountPercentage + "\n...........................................................");
 
+//        Leap year code
+        System.out.println("This is Leap year code\n................................");
+        System.out.println("enter year you want to check : ");
+        int year = sc.nextInt();
+        if ((year % 4 == 0 ))
+            System.out.println(year+" is a leap year");
+        else System.out.println(year+" is not a leap year");
+        System.out.println("....................................");
     }
 }
