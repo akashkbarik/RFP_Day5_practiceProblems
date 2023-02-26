@@ -151,5 +151,17 @@ public class Core_Programs {
         System.out.println("Value of Root 2 of x :" + root2);
         System.out.println(".....................................................");
 
+//        Windchill code
+        System.out.println("this is windchill code\n.............................................");
+        System.out.println("enter temperature and speed respectively : ");
+        double t = sc.nextDouble();
+        double v = sc.nextDouble();
+        if (t > 50 || v > 120 || v < 3)
+            System.out.println("please give valid input : ");
+        else{
+            int w = (int) (35.74 + (0.6215 * t) + ((0.4275 * t) - 35.75) * Math.pow(v , 0.16 ));
+            System.out.println("The National Weather Service defines the effective temperature (the wind chill) to be : " +w+ " Degree");
+        }
+
     }
 }
