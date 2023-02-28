@@ -1,5 +1,9 @@
 package Day5.Practice;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class Core_Programs {
@@ -158,10 +162,44 @@ public class Core_Programs {
         double v = sc.nextDouble();
         if (t > 50 || v > 120 || v < 3)
             System.out.println("please give valid input : ");
-        else{
-            int w = (int) (35.74 + (0.6215 * t) + ((0.4275 * t) - 35.75) * Math.pow(v , 0.16 ));
-            System.out.println("The National Weather Service defines the effective temperature (the wind chill) to be : " +w+ " Degree");
+        else {
+            int w = (int) (35.74 + (0.6215 * t) + ((0.4275 * t) - 35.75) * Math.pow(v, 0.16));
+            System.out.println("The National Weather Service defines the effective temperature (the wind chill) to be : " + w + " Degree");
         }
+        System.out.println("............................................");
+//        2D Array with printwriter
+        System.out.println("this is 2D Array code\n............................");
+
+        System.out.println("Enter number of rows :");
+        int m = sc.nextInt();
+        System.out.println("Enter number of columns: ");
+        int o = sc.nextInt();
+        System.out.println("Rows : " + m + " columns : " + o);
+
+        setArray(m, o);
 
     }
-}
+            public static void setArray(int row, int col) {
+                int[][] twoDArr = new int[row][col];
+                for (int i = 0; i < row; i++) {
+                    for (int j = 0; j < col; j++) {
+                        System.out.println("enter values of " + i + " " + j + " : ");
+                        twoDArr[i][j] = sc.nextInt();
+                    }
+                }
+                printArray(twoDArr, row, col);
+            }
+
+            public static void printArray(int[][] twoDarr, int row, int col) {
+                PrintWriter writer = new PrintWriter(System.out);
+                for (int i = 0; i < row; i++) {
+                    for (int j = 0; j < col; j++) {
+                        writer.write(" " + twoDarr[i][j] + "\t");
+                        writer.flush();
+                    }
+                    writer.write("\n");
+                    writer.flush();
+                }
+            }
+        }
+
